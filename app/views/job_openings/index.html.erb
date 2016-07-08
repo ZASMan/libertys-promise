@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<section>
+
+<center><h1>Gaithersburg Employment Program Job Openings</h1></center>
+
+<p class="text-muted">Below is a list of job openings. Please revisit this webpage weekly for updates. If you have any questions or concerns, please contact Mr. Julien Labiche by telephone at (703) 549-9950 or by email at julien@libertyspromise.org.<br>
+
+  IT is important for you to set a goal and work towards it. Apply to at least 5 jobs per week. After you have applied, call and ask to speak to a manager and follow up with your application.</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>Location</th>
+      <th>Link to Position</th>
+      <th>Comment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @job_openings.each do |job_opening| %>
+      <tr>
+        <td><%= job_opening.company %></td>
+        <td><%= job_opening.location %></td>
+        <td><a href='<%= job_opening.position%>'><%= job_opening.position%></a></td>
+        <td><%= job_opening.comment %></td>
+        <td><%= link_to 'Show', job_opening %></td>
+        <td><%= link_to 'Edit', edit_job_opening_path(job_opening) %></td>
+        <td><%= link_to 'Destroy', job_opening, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Job opening', new_job_opening_path, :class => "btn btn-default" %>
+
+</section>

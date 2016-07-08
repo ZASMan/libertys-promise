@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<section>
+
+<p>
+  <strong>Company:</strong>
+  <%= @job_opening.company %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @job_opening.location %>
+</p>
+
+<p>
+  <strong>Link to Position:</strong>
+  <a href= "<%= @job_opening.position %>"><%= @job_opening.position %></a>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @job_opening.comment %>
+</p>
+
+<%= link_to 'Edit', edit_job_opening_path(@job_opening) %> |
+<%= link_to 'Back', job_openings_path %>
+
+</section>
