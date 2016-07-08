@@ -1,56 +1,42 @@
 Rails.application.routes.draw do
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+  get 'pages/index'
 
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  get 'pages/about_us'
 
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+  get 'pages/board'
 
-  # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
+  get 'pages/cebell'
 
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+  get 'pages/civics'
 
-  # Example resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
+  get 'pages/contact'
 
-  # Example resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
+  get 'pages/donors'
 
-  # Example resource route with more complex sub-resources:
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', on: :collection
-  #     end
-  #   end
+  get 'pages/espanol'
 
-  # Example resource route with concerns:
-  #   concern :toggleable do
-  #     post 'toggle'
-  #   end
-  #   resources :posts, concerns: :toggleable
-  #   resources :photos, concerns: :toggleable
+  get 'pages/fundraiser'
 
-  # Example resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
+  get 'pages/history'
+
+  get 'pages/host_application'
+
+  get 'pages/locations'
+
+  get 'pages/map'
+
+  get 'pages/opportunities_plus'
+
+  get 'pages/our_impact'
+
+  get 'pages/staff'
+
+  get 'pages/volunteer'
+
+  get 'pages/what_we_do'
+
+  get 'pages/what_you_can_do'
+
+  root 'pages#index'
+
 end

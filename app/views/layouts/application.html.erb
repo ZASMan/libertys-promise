@@ -1,14 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LibertysPromise</title>
+  <title>Liberty's Promise</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <!-- Plugin JavaScript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
 </head>
 <body>
 
+	<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="/pages/index">Liberty's Promise</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                    <li class="dropdown"><a href="/pages/about_us">About Us<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li style="color:black"><a href="/pages/staff">Staff</a></li>
+                            <li style="color:black"><a href="/pages/board">Board of Directors</a></li>
+                            <li style="color:black"><a href="/pages/donors">Donors</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="/pages/what_we_do">What We Do<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li style="color:black"><a href="/pages/civics">Civics and Citizenship</a></li>
+                            <li style="color:black"><a href="/pages/cebell">CE-BELL</a></li>
+                            <li style="color:black"><a href="/pages/opportnities_plus">Opportunities Plus</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="/pages/our_impact">Our Impact<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li style="color:black"><a href="/pages/map">Our Youth</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="/pages/what_you_can_do">What You Can Do<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li style="color:black"><a href="/pages/fundraiser">Annual Fundraiser</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/pages/contact">Contact</a>
+                    </li>
+                    <li><a href="https://twitter.com/LibertysPromise"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/libertyspromise/"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/libertyspromise/"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/company/liberty%27s-promise?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10530485%2Cidx%3A3-2-5%2CtarId%3A1457964425478%2Ctas%3Aliberty%27s+promise"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
 <%= yield %>
+
+<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Liberty's Promise 2016</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://twitter.com/LibertysPromise"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/libertyspromise/"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/libertyspromise/"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/groups/4175637"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li>Phone: (703) 549-9950</li>
+                        <li>Fax: (703) 549-9953</li>
+                        <li>info@libertyspromise.org</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
 </body>
 </html>
