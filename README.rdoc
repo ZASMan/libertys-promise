@@ -1,28 +1,36 @@
-== README
+# LP New Site Design
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This site is being designed for an Alexandria, VA based non-profit. 
 
-Things you may want to cover:
+Final version will include a basic blog system for staff to add new posts, as well as keep an up to date list of scholarships and job opportunities for youth.
 
-* Ruby version
+Technologies Used
 
-* System dependencies
+#Ruby on Rails
 
-* Configuration
+# Bootstrap
+http://getbootstrap.com/
 
-* Database creation
+# [Start Bootstrap](http://startbootstrap.com/) - [Agency](http://startbootstrap.com/template-overviews/agency/)
+Much of this site was based off of the Agency bootstrap template, available here:
+[Agency](http://startbootstrap.com/template-overviews/agency/) is a one page agency portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a responsive timeline, and a working PHP contact form.
 
-* Database initialization
+# Font Awesome
+I use this library for the navbar and other icons on the website.
+https://fortawesome.github.io/Font-Awesome/
 
-* How to run the test suite
+# jquery
+I used jquery to "write less- and do more."
+https://jquery.com/
 
-* Services (job queues, cache servers, search engines, etc.)
+# Jvector Map
+I used the javascript plugin which displays a world map and the number of youth from each country comes from the jvector map plugin, viewable here:
+http://jvectormap.com/
 
-* Deployment instructions
+# Snapwidget instagram plugin
+For displaying the organization's instagram feed.
+http://snapwidget.com/
 
-* ...
+# Twitter widget
+https://dev.twitter.com/web/overview
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.

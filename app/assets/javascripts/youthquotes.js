@@ -61,7 +61,7 @@ var randomNumber = Math.floor(Math.random(10)*10);
 
 //Rending Quotes about involvement in community for the "impact" page
 
-$(document).ready(function() {
+$(document).on('ready page:load', function(){
 	if (randomNumber <= 2) {
 		$(".community-quote").append(communityQuotes.quote1);
 	} else if (randomNumber > 2 && randomNumber <= 4) {
@@ -74,7 +74,7 @@ $(document).ready(function() {
 });
 
 //Quotes about preperation for college for the "impact" page
-$(document).ready(function() {
+$(document).on('ready page:load', function(){
 	if (randomNumber <= 2) {
 		$(".college-quote").append(collegeQuotes.quote1);
 	} else if (randomNumber > 2 && randomNumber <= 4) {
@@ -87,7 +87,7 @@ $(document).ready(function() {
 });
 
 //Quotes about preperation for jobs for the "impact" page
-$(document).ready(function() {
+$(document).on('ready page:load', function(){
 	if (randomNumber <= 2) {
 		$(".job-quote").append(jobQuotes.quote1);
 	} else if (randomNumber > 2 && randomNumber <= 4) {
@@ -100,7 +100,7 @@ $(document).ready(function() {
 });
 
 //Quotes about individual support and mentoring for the "impact" page
-$(document).ready(function() {
+$(document).on('ready page:load', function(){
 	if (randomNumber <= 2) {
 		$(".support-quote").append(supportQuotes.quote1);
 	} else if (randomNumber > 2 && randomNumber <= 4) {
@@ -113,7 +113,7 @@ $(document).ready(function() {
 });
 
 //Quotes about friendship and diversity in LP programs for the "map" page
-$(document).ready(function() {
+$(document).on('ready page:load', function(){
 	if (randomNumber <= 2) {
 		$(".diversity-quote").append(diversityQuotes.quote1);
 	} else if (randomNumber > 2 && randomNumber <= 4) {
@@ -126,7 +126,7 @@ $(document).ready(function() {
 });
 
 //General youth quotes about Liberty's Promise appended to the staff, donor, and board pages
-$(document).ready(function() {
+$(document).on('ready page:load', function(){
 	if (randomNumber <= 2) {
 		$(".general-quote").append(generalQuotes.quote1);
 	} else if (randomNumber > 2 && randomNumber <= 4) {
