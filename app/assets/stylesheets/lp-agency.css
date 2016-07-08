@@ -210,7 +210,7 @@ ul.dropdown-menu {
 
 header
 	{
-		background-image:url(../img/header-bg.jpg);
+		background-image:url('header-bg.JPG');
 		background-repeat:none;
 		background-attachment:scroll;
 		background-position:center center;
@@ -325,7 +325,7 @@ aside.clients img{
 
 section#contact{
 	background-color:#222;
-	background-image:url(../img/map-image.png);
+	background-image:url('map-image.png');
 	background-position:center;
 	background-repeat:no-repeat
 }
