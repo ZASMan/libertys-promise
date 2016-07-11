@@ -6,12 +6,18 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
+  <!-- Custom Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
-      <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
     <!-- Jvector Map -->
 
@@ -62,27 +68,35 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                    <li class="dropdown"><a href="/pages/about_us">About Us<b class="caret"></b></a>
+                    <li class="dropdown">
+                        <a href="/pages/about_us" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
                         <ul class="dropdown-menu">
+                            <li style="color:black"><a href="/pages/about_us">About Us</a></li>
                             <li style="color:black"><a href="/pages/staff">Staff</a></li>
                             <li style="color:black"><a href="/pages/board">Board of Directors</a></li>
                             <li style="color:black"><a href="/pages/donors">Donors</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="/pages/what_we_do">What We Do<b class="caret"></b></a>
+                    <li class="dropdown">
+                        <a href="/pages/what_we_do" class="dropdown-toggle" data-toggle="dropdown">Our Programs<b class="caret"></b></a>
                         <ul class="dropdown-menu">
+                            <li style="color:black"><a href="/pages/what_we_do">What We do</a><li>
                             <li style="color:black"><a href="/pages/civics">Civics and Citizenship</a></li>
                             <li style="color:black"><a href="/pages/cebell">CE-BELL</a></li>
                             <li style="color:black"><a href="/pages/opportnities_plus">Opportunities Plus</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="/pages/our_impact">Our Impact<b class="caret"></b></a>
+                    <li class="dropdown">
+                        <a href="/pages/our_impact" class="dropdown-toggle" data-toggle="dropdown">Our Impact<b class="caret"></b></a>
                         <ul class="dropdown-menu">
+                            <li style="color:black"><a href="/pages/our_impact">Our Impact</a></li>
                             <li style="color:black"><a href="/pages/map">Our Youth</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="/pages/what_you_can_do">What You Can Do<b class="caret"></b></a>
+                    <li class="dropdown">
+                        <a href="/pages/what_you_can_do" class="dropdown-toggle" data-toggle="dropdown">What You Can Do<b class="caret"></b></a>
                         <ul class="dropdown-menu">
+                            <li style="color:black"><a href="/pages/what_you_can_do"> What You Can Do</a></li>
                             <li style="color:black"><a href="/pages/fundraiser">Annual Fundraiser</a></li>
                         </ul>
                     </li>

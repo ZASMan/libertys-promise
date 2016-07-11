@@ -124,7 +124,8 @@ h1,h2,h3,h4,h5,h6{
 .navbar-default .navbar-brand{
 	color:#ffffff;
 	font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,cursive;
-	background-image: url(../images/LP-Logo.JPG) center / contain no-repeat; /*Custom Navbar Brand LP Logo*/
+	background-image: url(../images/LP-Logo.JPG) center / contain no-repeat; 
+	/*Custom Navbar Brand LP Logo*/
 }
 
 .navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:active,.navbar-default .navbar-brand.active{
