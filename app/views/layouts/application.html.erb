@@ -13,6 +13,29 @@
       <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+    <!-- Jvector Map -->
+
+    <script>
+    $(document).on('ready page:load', function(){
+        jQuery('#vmap').vectorMap({
+        map: 'world_en',
+        backgroundColor: null,
+        color: '#ffffff',
+        hoverOpacity: 0.7,
+        selectedColor: '#666666',
+        enableZoom: true,
+        showTooltip: true,
+        values: numberYouth,
+        scaleColors: ['#ffffff', '#006491'],
+        normalizeFunction: 'polynomial',
+        onLabelShow: function (event, label, code) {
+            if (numberYouth[code] > 0)
+                label.append(': '+numberYouth[code]+' Youth');
+        }
+    });
+    });
+    </script>
+
 </head>
 <body>
 

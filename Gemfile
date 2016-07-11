@@ -49,4 +49,5 @@ group :production do
   gem 'rails_12factor'
 end
 
+#Font Awesome
 gem 'font-awesome-rails'
