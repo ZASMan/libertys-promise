@@ -4,7 +4,7 @@ class UserMailer < ApplicationMailer
 	def contact_form(email, name, message)
 		@message = message
 		mail(:from => email,
-			:to => 'info@libertyspromise.org',
+			:to => 'zsandin@libertyspromise.org',
 			:subject => "New contact form message from #{name}")
 	end
 end
