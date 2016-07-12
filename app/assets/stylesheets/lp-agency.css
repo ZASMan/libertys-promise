@@ -116,6 +116,10 @@ h1,h2,h3,h4,h5,h6{
 
 /* Navbar */
 
+a {
+	background-color: #000000;
+}
+
 .navbar-default{
 	background-color:#222;
 	border-color:transparent
@@ -124,8 +128,7 @@ h1,h2,h3,h4,h5,h6{
 .navbar-default .navbar-brand{
 	color:#ffffff;
 	font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,cursive;
-	background-image: url(../images/LP-Logo.JPG) center / contain no-repeat; 
-	/*Custom Navbar Brand LP Logo*/
+	background-image: url(../images/LP-Logo.JPG) center / contain no-repeat; /*Custom Navbar Brand LP Logo*/
 }
 
 .navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:active,.navbar-default .navbar-brand.active{
@@ -155,10 +158,12 @@ h1,h2,h3,h4,h5,h6{
 	text-transform:uppercase;
 	font-weight:400;
 	letter-spacing:1px;
+	color: #ffffff;
+
 }
 
 .navbar-default .nav li a:hover,.navbar-default .nav li a:focus{
-	color:#ffffff;
+	color:#3663fe;
 	outline:0
 }
 
@@ -203,7 +208,7 @@ h1,h2,h3,h4,h5,h6{
 	}
 
 ul.dropdown-menu {
-	color: black;
+	background-color: black;
 }
 
 /*Header*/
