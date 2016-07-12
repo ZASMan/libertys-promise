@@ -5,6 +5,6 @@ class ApplicationController < ActionController::Base
 
   private
   	def authorize_admin
-  		redirect_to login_path unless user_signed_in? && current_user.admin?
+  		redirect_to new_user_session_path unless user_signed_in? && current_user.admin?
   	end
 end

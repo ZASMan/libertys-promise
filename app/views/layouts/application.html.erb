@@ -110,7 +110,7 @@
                         <ul class="dropdown-menu">
                             <li style="color:black"><a href="/job_openings">Gaithersburg Employment Job Openings</a></li>
                             <li style="color:black"><a href="/users">Users</a></li>
-                            <li style="color:black"><a href="<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>"></a></li>
+                            <li style="color:black"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
                             <% end %>
                     </li>
                 </ul>
