@@ -30,6 +30,10 @@ a{
 	color:#3663fe
 }
 
+a.page-scroll.btn.btn.btn-xl {
+	color: #ffffff;
+}
+
 a:hover,a:focus,a:active,a.active{
 	color:#ffffff
 }
@@ -105,6 +109,15 @@ h1,h2,h3,h4,h5,h6{
 .btn-xl .badge{
 	color:#3663fe;
 	background-color:#fff
+}
+
+.site-link {
+	background-color: #ffffff;
+}
+
+.site-link:hover {
+	color: #000000;
+	background-color: #ffffff;
 }
 
 /* Index */

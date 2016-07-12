@@ -28,7 +28,7 @@ Rails.application.routes.draw do
 
   get 'pages/opportunities_plus'
 
-  get 'pages/our_impact'
+  get 'pages/results'
 
   get 'pages/staff'
 
