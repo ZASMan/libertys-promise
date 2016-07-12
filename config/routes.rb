@@ -38,6 +38,8 @@ Rails.application.routes.draw do
 
   get 'pages/what_you_can_do'
 
+  post 'pages/thank_you'
+
   root 'pages#index'
 
 end
