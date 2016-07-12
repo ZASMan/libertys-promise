@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :users
+  resources :users
   resources :job_openings
+  
   get 'pages/index'
 
   get 'pages/about_us'

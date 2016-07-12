@@ -1,5 +1,8 @@
 class JobOpeningsController < ApplicationController
   before_action :set_job_opening, only: [:show, :edit, :update, :destroy]
+  #The index is viewable to site guests, but only the administrator can manage content
+  before_filter :authorize_admin, only: [:new, :edit, :create, :update, :destroy]
+
 
   # GET /job_openings
   # GET /job_openings.json

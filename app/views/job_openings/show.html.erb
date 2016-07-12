@@ -14,7 +14,7 @@
 
 <p>
   <strong>Link to Position:</strong>
-  <a href= "<%= @job_opening.position %>"><%= @job_opening.position %></a>
+  <a href= "<%= @job_opening.position %>" class="site-link"><%= @job_opening.position %></a>
 </p>
 
 <p>
@@ -22,7 +22,9 @@
   <%= @job_opening.comment %>
 </p>
 
-<%= link_to 'Edit', edit_job_opening_path(@job_opening) %> |
-<%= link_to 'Back', job_openings_path %>
+<% if user_signed_in? && current_user.admin? %>
+<%= link_to 'Edit', edit_job_opening_path(@job_opening), :class => "site-link" %> |
+<%= link_to 'Back', job_openings_path, :class => "site-link" %>
+<% end %>
 
 </section>

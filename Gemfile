@@ -51,3 +51,7 @@ end
 
 #Font Awesome
 gem 'font-awesome-rails'
+
+#User Authentication and Abilities
+gem 'devise'
+gem 'cancancan'

@@ -104,20 +104,25 @@
                     <li>
                         <a class="page-scroll" href="/pages/contact">Contact</a>
                     </li>
-                    <li><a href="https://twitter.com/LibertysPromise"><i class="fa fa-twitter"  target="_blank"></i></a>
-                        </li>
-                        <li><a href="https://www.facebook.com/libertyspromise/"><i class="fa fa-facebook"  target="_blank"></i></a>
-                        </li>
-                        <li><a href="https://www.instagram.com/libertyspromise/"><i class="fa fa-instagram"  target="_blank"></i></a>
-                        </li>
-                        <li><a href="https://www.linkedin.com/company/liberty%27s-promise?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10530485%2Cidx%3A3-2-5%2CtarId%3A1457964425478%2Ctas%3Aliberty%27s+promise"><i class="fa fa-linkedin"  target="_blank"></i></a>
-                        </li>
+                    <li class="dropdown">
+                        <% if user_signed_in? && current_user.admin? %>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin CP<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li style="color:black"><a href="/job_openings">Gaithersburg Employment Job Openings</a></li>
+                            <li style="color:black"><a href="/users">Users</a></li>
+                            <li style="color:black"><a href="<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>"></a></li>
+                            <% end %>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
 
 <%= yield %>
 
