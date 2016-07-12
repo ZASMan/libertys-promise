@@ -108,8 +108,9 @@
                         <% if user_signed_in? && current_user.admin? %>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin CP<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li style="color:black"><a href="/job_openings">Gaithersburg Employment Job Openings</a></li>
-                            <li style="color:black"><a href="/users">Users</a></li>
+                            <li style="color:black"><a href="/job_openings">Manage Gaithersburg Employment</a></li>
+                            <li style="color:black"><a href="/posts">Manage Posts</a></li>
+                            <li style="color:black"><a href="/users">Manage Users</a></li>
                             <li style="color:black"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
                             <% end %>
                     </li>
