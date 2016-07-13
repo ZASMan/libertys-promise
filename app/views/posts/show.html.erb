@@ -1,18 +1,33 @@
 <section>
 
-<p id="notice"><%= notice %></p>
+	<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+	<center>
 
-<p>
-  <strong>Body:</strong>
-  <%= @post.body %>
-</p>
+		<strong>
+			<h3>
+  			<%= @post.title %>
+			</h3>
+		</strong>
 
-<%= link_to 'Edit', edit_post_path(@post), :class => "site-link"  %> |
-<%= link_to 'Back', posts_path, :class => "site-link"  %>
+		<p>
+			<%= @post.created_at.strftime("%d %b. %Y") %>
+		</p>
 
+		<br>
+
+		<p>
+  			<%= @post.body %>
+		</p>
+
+		<br>
+
+		<% if user_signed_in? && current_user.admin? %>
+
+		<%= link_to 'Edit', edit_post_path(@post), :class => "site-link btn btn-default"  %> |
+		<% end %>
+		<%= link_to 'Back', posts_path, :class => "site-link btn btn-default"  %>
+
+
+	</center>
 </section>

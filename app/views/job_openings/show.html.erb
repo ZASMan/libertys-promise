@@ -1,30 +1,35 @@
 <section>
 
-<p id="notice"><%= notice %></p>
+	<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Company:</strong>
-  <%= @job_opening.company %>
-</p>
+	<center>
 
-<p>
-  <strong>Location:</strong>
-  <%= @job_opening.location %>
-</p>
+		<h3>
+  			<strong>Company:</strong>
+  			<%= @job_opening.company %>
+		</h3>
 
-<p>
-  <strong>Link to Position:</strong>
-  <a href= "<%= @job_opening.position %>" class="site-link"><%= @job_opening.position %></a>
-</p>
+		<p>
+  			<strong>Location:</strong>
+  			<%= @job_opening.location %>
+		</p>
 
-<p>
-  <strong>Comment:</strong>
-  <%= @job_opening.comment %>
-</p>
+		<p>
+  			<strong>Link to Position:</strong>
+  			<a href= "<%= @job_opening.position %>" class="site-link"><%= @job_opening.position %></a>
+		</p>
 
-<% if user_signed_in? && current_user.admin? %>
-<%= link_to 'Edit', edit_job_opening_path(@job_opening), :class => "site-link" %> |
-<%= link_to 'Back', job_openings_path, :class => "site-link" %>
-<% end %>
+		<p>
+
+  		<strong>Comment:</strong>
+  		<%= @job_opening.comment %>
+		</p>
+
+		<% if user_signed_in? && current_user.admin? %>
+		<%= link_to 'Edit', edit_job_opening_path(@job_opening), :class => "site-link btn  btn-default" %> |
+		<%= link_to 'Back', job_openings_path, :class => "site-link btn btn-default" %>
+		<% end %>
+
+	</center>
 
 </section>

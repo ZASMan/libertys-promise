@@ -13,11 +13,16 @@
 </p>
 
 <p>
+<strong>Email:</strong>
+<%= @user.email %>
+</p>
+
+<p>
   <strong>Admin:</strong>
   <%= @user.admin %>
 </p>
 
-<%= link_to 'Edit', edit_user_path(@user), :class => "site-link"  %> |
-<%= link_to 'Back', users_path, :class => "site-link" %>
+<%= link_to 'Edit', edit_user_path(@user), :class => "site-link btn btn-default"  %> |
+<%= link_to 'Back', users_path, :class => "site-link btn btn-default" %>
 
 </section>

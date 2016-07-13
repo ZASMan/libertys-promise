@@ -22,9 +22,9 @@
         <td><%= user.last_name %></td>
         <td><%= user.email %></td>
         <td><%= user.admin %></td>
-        <td><%= link_to 'Show', user, :class => "site-link" %></td>
-        <td><%= link_to 'Edit', edit_user_path(user), :class => "site-link" %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }, :class => "site-link" %></td>
+        <td><%= link_to 'Show', user, :class => "site-link btn btn-default" %></td>
+        <td><%= link_to 'Edit', edit_user_path(user), :class => "site-link btn btn-default" %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }, :class => "site-link btn btn-default" %></td>
       </tr>
     <% end %>
   </tbody>

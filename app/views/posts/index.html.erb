@@ -2,7 +2,7 @@
 
 <p id="notice"><%= notice %></p>
 
-<center><h1>Post Archive</h1></center>
+<center><h1>News</h1></center>
 
 <table class="table">
   <thead>
@@ -18,10 +18,10 @@
       <tr>
         <td><%= post.title %></td>
         <td><%= post.created_at %></td>
-        <td><%= link_to 'View Post', post, :class => "site-link" %></td>
+        <td><%= link_to 'View Post', post, :class => "site-link btn btn-default" %></td>
         <% if user_signed_in? && current_user.admin? %>
-        <td><%= link_to 'Edit', edit_post_path(post), :class => "site-link" %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, :class => "site-link" %></td>
+        <td><%= link_to 'Edit', edit_post_path(post), :class => "site-link btn btn-default" %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, :class => "site-link btn btn-default" %></td>
         <% end %>
       </tr>
     <% end %>

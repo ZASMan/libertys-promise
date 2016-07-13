@@ -26,10 +26,10 @@
         <td><%= job_opening.location %></td>
         <td><a href='<%= job_opening.position%>' class="site-link"><%= job_opening.position%></a></td>
         <td><%= job_opening.comment %></td>
-        <td><%= link_to 'Show', job_opening, :class => "site-link" %></td>
+        <td><%= link_to 'Show', job_opening, :class => "site-link btn btn-default" %></td>
         <% if user_signed_in? && current_user.admin? %>
-        <td><%= link_to 'Edit', edit_job_opening_path(job_opening), :class => "site-link" %></td>
-        <td><%= link_to 'Destroy', job_opening, method: :delete, data: { confirm: 'Are you sure?' }, :class => "site-link" %></td>
+        <td><%= link_to 'Edit', edit_job_opening_path(job_opening), :class => "site-link btn btn-default" %></td>
+        <td><%= link_to 'Destroy', job_opening, method: :delete, data: { confirm: 'Are you sure?' }, :class => "site-link btn btn-default" %></td>
         <% end %>
       </tr>
     <% end %>
@@ -39,7 +39,7 @@
 <br>
 
 <% if user_signed_in? && current_user.admin? %>
-  <%= link_to 'New Job opening', new_job_opening_path, :class => "btn btn-default" %>
+  <%= link_to 'New Job Opening', new_job_opening_path, :class => "btn btn-default" %>
 <% end %>
 
 </section>
