@@ -17,7 +17,7 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.title %></td>
-        <td><%= post.created_at %></td>
+        <td><%= post.created_at.strftime("%d %b. %Y")%></td>
         <td><%= link_to 'View Post', post, :class => "site-link btn btn-default" %></td>
         <% if user_signed_in? && current_user.admin? %>
         <td><%= link_to 'Edit', edit_post_path(post), :class => "site-link btn btn-default" %></td>
