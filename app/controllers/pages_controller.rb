@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def index
-    @posts = Post.limit(3)
+    @posts = Post.order("created_at DESC").limit(3)
   end
 
   def aboutus

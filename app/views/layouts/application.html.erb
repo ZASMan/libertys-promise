@@ -72,6 +72,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
                         <ul class="dropdown-menu" style="color:black">
                             <li style="color:black"><a href="/pages/about_us">About Us</a></li>
+                            <li style="color:black"><a href="/posts">News</a></li>
                             <li style="color:black"><a href="/pages/staff">Staff</a></li>
                             <li style="color:black"><a href="/pages/board">Board of Directors</a></li>
                             <li style="color:black"><a href="/pages/donors">Donors</a></li>
@@ -94,9 +95,15 @@
                             <li style="color:black"><a href="/pages/map">Our Youth</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=x6XFa-gnhM0vzpokvoX_xRfyUMQi20WRgBbOmbjL7CbQFLDdcNBQv0IALdK&dispatch=5885d80a13c0db1f8e263663d3faee8d64813b57e559a2578463e58274899069" target="_blank">Donate Now</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Donate Now<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li style="color:black"><a href="https://www.networkforgood.org/donation/ExpressDonation.aspx?ORGID2=27-0058022&vlrStratCode=5LyhRMUikvLodr853Ebcu6PWSC4tvSeX2fjuFrwoSQzzd%2fW4nFUnXEdr7yGCDR6i" target="_blank">Network for Good</a></li>
+                            <li style="color:black"><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=x6XFa-gnhM0vzpokvoX_xRfyUMQi20WRgBbOmbjL7CbQFLDdcNBQv0IALdK&dispatch=5885d80a13c0db1f8e263663d3faee8d64813b57e559a2578463e58274899069" target="_blank">Paypal</a></li>
+                            <li style="color:black"><a href="https://www.razoo.com/us/story/Libertyspromise" target="_blank">Razoo</a></li>
+                        </ul>
                     </li>
+
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Get Involved<b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -109,7 +116,7 @@
                     </li>
                     <li class="dropdown">
                         <% if user_signed_in? && current_user.admin? %>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin CP<b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li style="color:black"><a href="/job_openings">Manage Gaithersburg Employment</a></li>
                             <li style="color:black"><a href="/posts">Manage Posts</a></li>
@@ -133,15 +140,33 @@
 <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="K676279RGTYHW">
-                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                    </form>
-
+                <div class="col-md-2">
+                    <ul class="list-inline social-buttons">
+                        <li>
+                            <!-- Catalogue for Philanthropy -->
+                            <%=image_tag "catalogue-philanthropy.jpg", :class=> "img-responsive", :style => "height: 135px; width: 135px" %>
+                        </li>
+                    </ul>
                 </div>
+                <div class="col-md-2">
+                    <ul class="list-inline social-buttons">
+
+                        <li>
+                            <!-- Paypal Button -->
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="K676279RGTYHW">
+                                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            </form>
+                        </li>
+                        <li>
+                            <!-- Network for Good Button -->
+                            <%= image_tag "donate.png", :class => "img-responsive", :href => "https://www.networkforgood.org/donation/ExpressDonation.aspx?ORGID2=27-0058022&amp;vlrStratCode=m427lNEQekjmwXVqy6wzYWE7j3ujDOkQxg2WYoMaw9UaeJANLH15K3fMo%2be6nnX5", :style => "width: 176px; height: 44px"%>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Social Media Buttons -->
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
                         <li><a href="https://twitter.com/LibertysPromise" target="_blank"><i class="fa fa-twitter"></i></a>
