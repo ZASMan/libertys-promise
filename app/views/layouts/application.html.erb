@@ -140,29 +140,20 @@
 <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-2">
+                <!-- Donations and Other Logos -->
+                <div class="col-md-4">
                     <ul class="list-inline social-buttons">
+                        <li>
+                            <!-- Combined Federal Campaign -->
+                            <%= image_tag "cfc-logo.jpg", :class=> "img-responsive", :href=> "http://cfcnca.org/search/node/LIberty%27s%20Promise" %>
+                        </li>
+                        <li>
+                            <!-- Razoo -->
+                            <%= image_tag "razoo-logo.jpg", :class=> "img-responsive", :href=>"https://www.razoo.com/us/story/Libertyspromise" %>
+                        </li>
                         <li>
                             <!-- Catalogue for Philanthropy -->
-                            <%=image_tag "catalogue-philanthropy.jpg", :class=> "img-responsive", :style => "height: 135px; width: 135px" %>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <ul class="list-inline social-buttons">
-
-                        <li>
-                            <!-- Paypal Button -->
-                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                                <input type="hidden" name="cmd" value="_s-xclick">
-                                <input type="hidden" name="hosted_button_id" value="K676279RGTYHW">
-                                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                            </form>
-                        </li>
-                        <li>
-                            <!-- Network for Good Button -->
-                            <%= image_tag "donate.png", :class => "img-responsive", :href => "https://www.networkforgood.org/donation/ExpressDonation.aspx?ORGID2=27-0058022&amp;vlrStratCode=m427lNEQekjmwXVqy6wzYWE7j3ujDOkQxg2WYoMaw9UaeJANLH15K3fMo%2be6nnX5", :style => "width: 176px; height: 44px"%>
+                            <%=image_tag "catalogue-philanthropy.jpg", :class=> "img-responsive", :style => "height: 80px; width: 80x" %>
                         </li>
                     </ul>
                 </div>
@@ -179,7 +170,29 @@
                         </li>
                     </ul>
                 </div>
+                <!-- Donations and Other Logos -->
                 <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li>
+                            <!-- Paypal Button -->
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="K676279RGTYHW">
+                                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            </form>
+                        </li>
+                        <li>
+                            <!-- Network for Good Button -->
+                            <%= image_tag "donate.png", :class => "img-responsive", :href => "https://www.networkforgood.org/donation/ExpressDonation.aspx?ORGID2=27-0058022&amp;vlrStratCode=m427lNEQekjmwXVqy6wzYWE7j3ujDOkQxg2WYoMaw9UaeJANLH15K3fMo%2be6nnX5", :style => "width: 176px; height: 44px"%>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /End Row -->
+            <!-- Row -->
+            <div class="row">
+                <div class="col-lg-12">
                     <ul class="list-inline quicklinks">
                         <li>Copyright &copy; Liberty's Promise 2016</li>
                         <li>Phone: (703) 549-9950</li>
