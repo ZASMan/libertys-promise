@@ -9,24 +9,24 @@ Technologies Used
 # Bootstrap
 http://getbootstrap.com/
 
-# [Start Bootstrap](http://startbootstrap.com/) - [Agency](http://startbootstrap.com/template-overviews/agency/)
-Much of this site was based off of the Agency bootstrap template, available here:
+# [Start Bootstrap](http://startbootstrap.com/) - [Agency](http://startbootstrap.com/template-overviews/agency/)<br />
+Much of this site was based off of the Agency bootstrap template, available here:<br />
 [Agency](http://startbootstrap.com/template-overviews/agency/) is a one page agency portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
 # Font Awesome
-I use this library for the navbar and other icons on the website.
+I use this library for the navbar and other icons on the website.<br />
 https://fortawesome.github.io/Font-Awesome/
 
 # jquery
-I used jquery to "write less- and do more."
+I used jquery to "write less- and do more."<br />
 https://jquery.com/
 
 # Jvector Map
-I used the javascript plugin which displays a world map and the number of youth from each country comes from the jvector map plugin, viewable here:
+I used the javascript plugin which displays a world map and the number of youth from each country comes from the jvector map plugin, viewable here:<br />
 http://jvectormap.com/
 
 # Snapwidget instagram plugin
-For displaying the organization's instagram feed.
+For displaying the organization's instagram feed.<br />
 http://snapwidget.com/
 
 # Twitter widget
@@ -34,16 +34,16 @@ https://dev.twitter.com/web/overview
 
 #Architecture Notes
 
--Application Controller: The "authorize admin" method redirects anyone not signed in + admin to the root page.
--Users: Going to /users anyone can sign up, but those who sign up cannot manage any content through the posts, job_openings, or other users without the admin field boolean being changed to true.
--Posts (Listed as "News" in Navbar): The index of the posts scaffold and all of the individual job openings can be viewed by the public, but only the administrator can create/update/destroy. The three most recent posts are shown on a partial on the site's root page (pages/index).
--Job Openings: This is for one of the organization's youth employment program, not for jobs at the organization itself. The index of the Job Openings scaffold and all of the individual job openings can be viewed by the public, but only the administrator can create/update/destroy.
--Users: Only the administrator can create/update/destroy new users.
+-Application Controller: The "authorize admin" method redirects anyone not signed in + admin to the root page.<br />
+-Users: Going to /users anyone can sign up, but those who sign up cannot manage any content through the posts, job_openings, or other users without the admin field boolean being changed to true.<br />
+-Posts (Listed as "News" in Navbar): The index of the posts scaffold and all of the individual job openings can be viewed by the public, but only the administrator can create/update/destroy. The three most recent posts are shown on a partial on the site's root page (pages/index).<br />
+-Job Openings: This is for one of the organization's youth employment program, not for jobs at the organization itself. The index of the Job Openings scaffold and all of the individual job openings can be viewed by the public, but only the administrator can create/update/destroy.<br />
+-Users: Only the administrator can create/update/destroy new users.<br />
 
 #To Do List for the Future
 
--Posts: Create a system for changing the font/format/etc. of posts and allow users to upload an image associated with the post.
--Report a Bug/Request Content Update: When users are signed in and admin, create a way for them to "report a bug/request content update." Make it a seperate contact page and include from, a link to the page they want updated, and a description of the issue/content request. Send copies to whoever is the current website administrator. Another way to do this (perhaps to keep all the content in one place) would be to create a small forum and allow users to comment on it and check a boolean for "completed," and possibly send an automated e-mail to the developer whenever a user creates a new request.
+-Posts: Create a system for changing the font/format/etc. of posts and allow users to upload an image associated with the post.<br />
+-Report a Bug/Request Content Update: When users are signed in and admin, create a way for them to "report a bug/request content update." Make it a seperate contact page and include from, a link to the page they want updated, and a description of the issue/content request. Send copies to whoever is the current website administrator. Another way to do this (perhaps to keep all the content in one place) would be to create a small forum and allow users to comment on it and check a boolean for "completed," and possibly send an automated e-mail to the developer whenever a user creates a new request.<br />
 
 
 # Live Site
