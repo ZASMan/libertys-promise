@@ -43,6 +43,7 @@ https://dev.twitter.com/web/overview
 #To Do List for the Future
 
 -Posts: Create a system for changing the font/format/etc. of posts and allow users to upload an image associated with the post.
+-Report a Bug/Request Content Update: When users are signed in and admin, create a way for them to "report a bug/request content update." Make it a seperate contact page and include from, a link to the page they want updated, and a description of the issue/content request. Send copies to whoever is the current website administrator. Another way to do this (perhaps to keep all the content in one place) would be to create a small forum and allow users to comment on it and check a boolean for "completed," and possibly send an automated e-mail to the developer whenever a user creates a new request.
 
 
 # Live Site
