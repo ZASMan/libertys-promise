@@ -2,8 +2,6 @@
 
 This site is being designed for an Alexandria, VA based non-profit. 
 
-Final version will include a basic blog system for staff to add new posts, as well as keep an up to date list of scholarships and job opportunities for youth.
-
 Technologies Used
 
 #Ruby on Rails
@@ -34,6 +32,19 @@ http://snapwidget.com/
 # Twitter widget
 https://dev.twitter.com/web/overview
 
-# Live Link
+#Architecture Notes
+
+-Application Controller: The "authorize admin" method redirects anyone not signed in + admin to the root page.
+-Users: Going to /users anyone can sign up, but those who sign up cannot manage any content through the posts, job_openings, or other users without the admin field boolean being changed to true.
+-Posts (Listed as "News" in Navbar): The index of the posts scaffold and all of the individual job openings can be viewed by the public, but only the administrator can create/update/destroy. The three most recent posts are shown on a partial on the site's root page (pages/index).
+-Job Openings: This is for one of the organization's youth employment program, not for jobs at the organization itself. The index of the Job Openings scaffold and all of the individual job openings can be viewed by the public, but only the administrator can create/update/destroy.
+-Users: Only the administrator can create/update/destroy new users.
+
+#To Do List for the Future
+
+-Posts: Create a system for changing the font/format/etc. of posts and allow users to upload an image associated with the post.
+
+
+# Live Site
 
 http://libertys-promise.herokuapp.com/
