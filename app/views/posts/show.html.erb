@@ -15,9 +15,10 @@
 		</p>
 
 		<br>
+		<%= image_tag @post.image.url(:large) %>
 
 		<p>
-  			<%= @post.body %>
+  			<%= @post.body.html_safe %>
 		</p>
 
 		<br>

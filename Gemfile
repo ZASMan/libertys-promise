@@ -55,3 +55,9 @@ gem 'font-awesome-rails'
 #User Authentication and Abilities
 gem 'devise'
 gem 'cancancan'
+
+#For Text Editor
+gem 'ckeditor_rails'
+
+#For Image Upload
+gem "paperclip"

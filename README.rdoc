@@ -6,6 +6,8 @@ Technologies Used
 
 #Ruby on Rails
 
+#Styling
+
 # Bootstrap
 http://getbootstrap.com/
 
@@ -17,6 +19,8 @@ Much of this site was based off of the Agency bootstrap template, available here
 I use this library for the navbar and other icons on the website._
 https://fortawesome.github.io/Font-Awesome/
 
+#Javascript Libraries
+
 # jquery
 I used jquery to "write less- and do more."_
 https://jquery.com/
@@ -24,6 +28,11 @@ https://jquery.com/
 # Jvector Map
 I used the javascript plugin which displays a world map and the number of youth from each country comes from the jvector map plugin, viewable here:_
 http://jvectormap.com/
+
+# CKEditor
+To allow users custom styling on creating post.
+
+#Other Plugins
 
 # Snapwidget instagram plugin
 For displaying the organization's instagram feed._
