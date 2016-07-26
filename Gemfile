@@ -61,3 +61,6 @@ gem 'ckeditor_rails'
 
 #For Image Upload
 gem "paperclip"
+
+#Friendly ID for Custom URL for Posts Model 
+gem 'friendly_id', '~> 5.1.0'
