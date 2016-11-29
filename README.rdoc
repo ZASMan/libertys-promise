@@ -4,77 +4,81 @@ This site is being designed for an Alexandria, VA based non-profit.
 
 Technologies Used
 
-#Ruby on Rails with PostgresQL Database
+Ruby on Rails with PostgresQL Database
 
-#Styling
+Styling
 
-# Bootstrap
+Bootstrap
 http://getbootstrap.com/
 
-# [Start Bootstrap](http://startbootstrap.com/) - [Agency](http://startbootstrap.com/template-overviews/agency/)<br />
-#Much of this site was based off of the Agency bootstrap template, available here:_
+[Start Bootstrap](http://startbootstrap.com/) - [Agency](http://startbootstrap.com/template-overviews/agency/)<br />
+Much of this site was based off of the Agency bootstrap template, available here:_
 [Agency](http://startbootstrap.com/template-overviews/agency/) is a one page agency portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
-#Javascript Libraries
+Javascript Libraries
 
-# jquery
-#I used jquery to "write less- and do more."_
-#https://jquery.com/
+jquery
+I used jquery to "write less- and do more."_
+https://jquery.com/
 
-# Jvector Map
-#I used the javascript plugin which displays a world map and the number of youth from each country comes from the jvector map plugin, viewable here:_
-#http://jvectormap.com/
+Jvector Map
+I used the javascript plugin which displays a world map and the number of youth from each country comes from the jvector map plugin, viewable here:_
+http://jvectormap.com/
 
-#Ruby Gems
+Ruby Gems
 
-#Cancancan
-#User Abilities
-#-https://github.com/CanCanCommunity/cancancan
+Cancancan
+User Abilities
+-https://github.com/CanCanCommunity/cancancan
 
-# CKEditor
-#To allow users custom styling on creating post. I added .html_safe in the post views show page to allow the HTML tags from CKeditor styling to show up.
+CKEditor
+To allow users custom styling on creating post. I added .html_safe in the post views show page to allow the HTML tags from CKeditor styling to show up.
 https://github.com/galetahub/ckeditor
 
 Devise
-#User Authentication
-#-https://github.com/plataformatec/devise
+User Authentication
+https://github.com/plataformatec/devise
 
-# Font Awesome Rails
-#I use this library for the navbar and other icons on the website.
-#https://github.com/bokmann/font-awesome-rails
+Font Awesome Rails
+I use this library for the navbar and other icons on the website.
+https://github.com/bokmann/font-awesome-rails
 
-#Friendly ID
-#Used to create custom URL for posts.
-#https://github.com/norman/friendly_id
+Friendly ID
+Used to create custom URL for posts.
+https://github.com/norman/friendly_id
 
-#Other Plugins
+Other Plugins
 
-# Snapwidget instagram plugin
-#For displaying the organization's instagram feed._
-#http://snapwidget.com/
+Snapwidget instagram plugin
+For displaying the organization's instagram feed._
+http://snapwidget.com/
 
-# Twitter widget
-#https://dev.twitter.com/web/overview
+Twitter widget
+https://dev.twitter.com/web/overview
 
-#Architecture Notes
+Architecture Notes
 
-#-Application Controller: The "authorize admin" method redirects anyone not signed in + admin to the root page.
-#-Users: Going to /users anyone can sign up, but those who sign up cannot manage any content through the posts, job_openings, or other users without the admin field boolean being changed to true._
-#-Posts (Listed as "News" in Navbar): The index of the posts scaffold and all of the individual job openings can be viewed by the public, but only the administrator can create/update/destroy. The three most recent posts are shown on a partial on the site's root page (pages/index)._#
-#-Job Openings: This is for one of the organization's youth employment program, not for jobs at the organization itself. The index of the Job Openings scaffold and all of the individual job openings can be viewed by the public, but only the administrator can create/update/destroy._
-#-Users: Only the administrator can create/update/destroy new users._
+Application Controller: The "authorize admin" method redirects anyone not signed in + admin to the root page.
 
-#To Do List for the Future
+Users: Going to /users anyone can sign up, but those who sign up cannot manage any content through the posts, job_openings, or other users without the admin field boolean being changed to true._
 
-#-Report a Bug/Request Content Update: When users are signed in and admin, create a way for them to "report a bug/request content update." Make it a seperate contact page and include from, a link to the page they want updated, and a description of the issue/content request. Send copies to whoever is the current website administrator. Another way to do this (perhaps to keep all the content in one place) would be to create a small forum and allow users to comment on it and check a boolean for "completed," and possibly send an automated e-mail to the developer whenever a user creates a new request.
-#-Resources("Secret"): The old Liberty's Promise website has a /secret page with resume template and other materials for their youth to download. A possible solution would be to add these and upload with paperclip gem, or add them as external downloads to a public google drive.
+Posts (Listed as "News" in Navbar): The index of the posts scaffold and all of the individual job openings can be viewed by the public, but only the administrator can create/update/destroy. The three most recent posts are shown on a partial on the site's root page (pages/index)._#
+
+Job Openings: This is for one of the organization's youth employment program, not for jobs at the organization itself. The index of the Job Openings scaffold and all of the individual job openings can be viewed by the public, but only the administrator can create/update/destroy._
+
+Users: Only the administrator can create/update/destroy new users._
+
+To Do List for the Future
+
+*Report a Bug/Request Content Update: When users are signed in and admin, create a way for them to "report a bug/request content update." Make it a seperate contact page and include from, a link to the page they want updated, and a description of the issue/content request. Send copies to whoever is the current website administrator. Another way to do this (perhaps to keep all the content in one place) would be to create a small forum and allow users to comment on it and check a boolean for "completed," and possibly send an automated e-mail to the developer whenever a user creates a new request.
+*Resources("Secret"): The old Liberty's Promise website has a /secret page with resume template and other materials for their youth to download. A possible solution would be to add these and upload with paperclip gem, or add them as external downloads to a public google drive.
 
 
-#Other Notes
+Other Notes
 
-#-Turbolinks: I disabled this as a temporary fix to get all the javascripts working. There aren't a ton of scripts on the site so it shouldn't affect performance much.
-#-Rails_12 Factor: This gem or something else isn't quite working properly to push to Heroku, so I'm running "git rm-r public/assets" and then "RAILS_ENV=production rake assets:precompile" before running "git add . Need to fix this since it takes a while to push live now.
+Turbolinks: I disabled this as a temporary fix to get all the javascripts working. There aren't a ton of scripts on the site so it shouldn't affect performance much.
+Rails_12 Factor: This gem or something else isn't quite working properly to push to Heroku, so I'm running "git rm-r public/assets" and then "RAILS_ENV=production rake assets:precompile" before running "git add . Need to fix this since it takes a while to push live now.
 
-# Live Site
+Live Site
 
 http://libertys-promise.herokuapp.com/
